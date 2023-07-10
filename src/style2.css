@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #334155;
+}
+
+/* .root {
+  background-color: #a7f3d0;
+} */
+
+/* HEADER COMPONENTS*/
+.header {
+  background-color: #120136;
+  margin: 0px 50px;
+  min-height: 100px;
+  padding: 30px;
+  position: fixed;
+  text-align: center;
+  width: calc(100% - 100px);
+  /* visibility: hidden; */
+}
+
+nav {
+  background-color: #120136;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 80px;
+}
+
+nav a {
+  background-color: #120136;
+  color: #fcbf1e;
+  font-size: 50px;
+  font-family: "Libre Barcode 39 Extended Text", sans-serif;
+}
+
+nav a:hover {
+  color: #f43f5e;
+  transition: 0.1s;
+}
+
+/* MAIN COMPONENTS*/
+
+.main {
+  background-color: #035aa6;
+  /* position: relative; */
+  margin: 10px 50px 0px;
+  /* padding-top: 50px; */
+}
+
+.home,
+.about-me,
+.projects,
+.services,
+.contact-me {
+  /* height: calc(100% -130px); */
+  /* height: 840px; */
+  height: 100vh;
+  /* border: 20px, solid, slateblue; */
+  background-color: #40bad5;
+}
+.about-me,
+.services {
+  background-color: #035aa6;
+}
+
+.home h1 {
+  /* background-color: #f43f5e; */
+  /* padding-top: 500px; */
+  /* display: inline; */
+  font-size: 80px;
+  font-family: "Monoton", sans-serif;
+  color: #120136;
+  /* padding-top: 300px; */
+  text-align: center;
+}
+
+/* FOOTER COMPONENTS*/
+
+.footer {
+  background-color: #120136;
+  color: #fcbf1e;
+  margin: 0px 50px;
+  font-family: "Aclonica", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 45px;
+  margin-bottom: 0;
+}
+
+.scroll {
+  position: relative;
+  width: 100vw - 1px;
+  overflow: hidden;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  background-color: #040619;
+}
+
+.m-scroll {
+  overflow: hidden;
+  height: 100%;
+  /* white-space: nowrap; */
+  animation: scrollText 20s infinite alternate;
+  margin: 0;
+  font-size: 0;
+  display: flex;
+  justify-content: space-between;
+  /* width: fit-content; */
+}
+
+span {
+  /* display: inline-block; */
+  margin: 0;
+  padding: 0;
+  /* color: white; */
+}
+
+@keyframes scrollText {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-1 * 100px * var(--n)));
+  } /* 100px is the approx width of each logo including margin, adjust it according to your images */
+}
